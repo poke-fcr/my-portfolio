@@ -1,15 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { BehaviorSubject, Subscription } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ValueService {
-  screenSizeLtMedium = new Subscription(Boolean)
+  screenSizeLtMedium = new BehaviorSubject<boolean>(false)
   constructor() {
-
-
-
-
    }
 }

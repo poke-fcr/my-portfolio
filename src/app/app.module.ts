@@ -9,12 +9,16 @@ import { LandingComponent } from './components/landing/landing.component'
 import { MatToolbarModule} from '@angular/material/toolbar'
 import {MatIconModule} from '@angular/material/icon'
 import {MatButtonModule} from '@angular/material/button'
-import {MatCardModule} from '@angular/material/card'
+import {MatCardModule} from '@angular/material/card';
+import { SkillsHomeComponent } from './components/skills-home/skills-home.component'
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    SkillsHomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

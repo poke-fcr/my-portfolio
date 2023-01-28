@@ -1,0 +1,15 @@
+.container {
+    padding: 1em;  
+    text-align: center;
+    background-color: #222629;
+    justify-content: center;
+    min-width: fit-content;
+    color: #FEFFFF;
+    .heading{
+        color:#86C232;
+    }
+    .contents{
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }

@@ -13,7 +13,8 @@
   @media (min-width: 961px) {
     margin: 1em;
   }
-
+  margin-bottom: 1em;
+  color: #FEFFFF;
   text-align: center;
   background-color: #18bc9c;
   height: 80vh;
@@ -52,11 +53,14 @@
 }
 
 .my-description {
+  display: inline-block;
   padding: 12px;
   margin-left: 12px;
-  color: white;
+  color: #FEFFFF;
   // min-width:45%;
 }
+
+
 
 .width-66 {
   width: 66%;

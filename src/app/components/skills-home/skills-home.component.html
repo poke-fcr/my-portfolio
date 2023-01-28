@@ -1,0 +1,37 @@
+<div>
+  <mat-card class="container">
+    <h1>Featured</h1>
+    <div
+      [ngClass]="{
+        'feature-display': !isScreenSizeLtMedium,
+        'feature-display-mob': isScreenSizeLtMedium
+      }"
+    >
+      <ng-container *ngIf="!isScreenSizeLtMedium">
+        <button (click)="navigatePrevious()" class="button-color" mat-mini-fab>
+          <mat-icon>navigate_before</mat-icon>
+        </button>
+      </ng-container>
+      <div class="w-full flex justify-center">
+        <img
+          class="full border shadow-2xl"
+          [src]="imageList[current]"
+          width="620px"
+        />
+      </div>
+      <ng-container *ngIf="!isScreenSizeLtMedium">
+        <button (click)="navigateNext()" class="button-color" mat-mini-fab>
+          <mat-icon>navigate_next</mat-icon>
+        </button>
+      </ng-container>
+    </div>
+    <div *ngIf="isScreenSizeLtMedium" class="flex justify-evenly">
+      <button (click)="navigatePrevious()" class="button-color" mat-mini-fab>
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <button (click)="navigateNext()" class="button-color" mat-mini-fab>
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+</div>

@@ -7,9 +7,15 @@ import anime from 'animejs/lib/anime.es.js';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
+  timeInterval = 1500;
   constructor() {}
 
   ngOnInit() {
+  //  this.initiateDOM()
+  this.startAnimation()
+  }
+
+  startAnimation() {
     let textWrapper = document.querySelector('.my-description');
     if (textWrapper && textWrapper.textContent)
       textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -18,28 +24,27 @@ export class LandingComponent implements OnInit {
       );
 
     anime
-      .timeline({ loop: true })
+      .timeline()
+      .add({
+        delay:2000
+      })
       .add({
         targets: '.image-resize',
         translateX: ['-2500px', 0], // -> '250px'
+        opacity: [0, 1],
         easing: 'easeOutExpo',
         duration: 2000,
       })
       .add({
         targets: '.my-description .letter',
-        scale: [4, 1],
         opacity: [0, 1],
         translateZ: 0,
         easing: 'easeOutExpo',
-        duration: 950,
-        delay: (el, i) => 70 * i,
+        duration: 500,
+        delay: (el, i) => 50 * i,
       })
-      .add({
-        targets: '.my-description',
-        opacity: 0,
-        duration: 1000,
-        easing: 'easeOutExpo',
-        delay: 1000,
-      });
   }
+
+  
+   
 }
