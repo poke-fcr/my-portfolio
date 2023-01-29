@@ -12,13 +12,15 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatCardModule} from '@angular/material/card';
 import { SkillsHomeComponent } from './components/skills-home/skills-home.component'
 import { FooterComponent } from './components/footer/footer.component';
+import { FeaturedComponent } from './components/featured/featured.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     SkillsHomeComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,

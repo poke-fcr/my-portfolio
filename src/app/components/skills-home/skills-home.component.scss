@@ -1,17 +1,17 @@
 .container {
-  color: #FEFFFF;
+  color: #101820FF;
   padding: 1em;
   @media (min-width: 961px) {
     margin: 1em;
   }
   margin-bottom: 1em;
   text-align: center;
-  background-color: #3aafa9;
+  background-color: #FCE77D ;
+  min-width: -webkit-fill-available;
 
   .feature-display {
     display: flex;
     align-items: center;
-    height: 80vh;
   }
 
   .feature-display-mob {
@@ -21,18 +21,18 @@
   }
 
   .button-color{
-    background-color: #17252A;
+    background-color: #F96167 ;
   }
-}
 
-.border {
-	font-size: 1.6rem;
-	display: grid;
-	place-items: center;
-	min-height: 200px;
-	border: 8px solid;
-}
+  .secondary-image{
+    opacity: 0.3;
+    margin: 0px 24px;
+    height: 180px;
+    width: 180px;
+  }
 
-.full {
-	border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+  .main-image {
+    height: 240px;
+    width: 240px;
+  }
 }

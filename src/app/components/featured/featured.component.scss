@@ -1,0 +1,39 @@
+.container {
+    color: #FEFFFF;
+    padding: 1em;
+    @media (min-width: 961px) {
+      margin: 1em;
+    }
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #3aafa9;
+    min-width: -webkit-fill-available;
+  
+    .feature-display {
+      display: flex;
+      align-items: center;
+      height: 80vh;
+    }
+  
+    .feature-display-mob {
+      display: flex;
+      align-items: center;
+      padding: 1em;
+    }
+  
+    .button-color{
+      background-color: #17252A;
+    }
+  }
+  
+  .border {
+      font-size: 1.6rem;
+      display: grid;
+      place-items: center;
+      min-height: 200px;
+      border: 8px solid;
+  }
+  
+  .full {
+      border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+  }

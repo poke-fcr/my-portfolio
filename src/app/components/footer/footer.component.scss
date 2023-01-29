@@ -3,7 +3,7 @@
     text-align: center;
     background-color: #222629;
     justify-content: center;
-    min-width: fit-content;
+    min-width: -webkit-fill-available;
     color: #FEFFFF;
     .heading{
         color:#86C232;
@@ -11,5 +11,22 @@
     .contents{
         display: flex;
         justify-content: space-evenly;
+    }
+    .button{
+        background-color: #222629;
+        color: #FEFFFF;
+        border-color: #86C232;
+        border: #86C232 solid 1px;
+        margin: 4px;
+    }
+    .links{
+        cursor: pointer;
+        margin: 4px;
+        border: #86C232 solid 0px 0px 0px 8px;
+    }
+    .image{
+        margin: 12px;
+        height: 32px !important;
+        cursor: pointer;
     }
   }

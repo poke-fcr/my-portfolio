@@ -1,6 +1,6 @@
 <div>
   <mat-card class="container">
-    <h1>Featured</h1>
+    <h1>My skills</h1>
     <div
       [ngClass]="{
         'feature-display': !isScreenSizeLtMedium,
@@ -12,12 +12,21 @@
           <mat-icon>navigate_before</mat-icon>
         </button>
       </ng-container>
-      <div class="w-full flex justify-center">
+      <div class="w-full flex justify-center items-center">
         <img
-          class="full border shadow-2xl"
-          [src]="imageList[current]"
-          width="620px"
+          class="shadow-xl secondary-image"
+          [src]="imageList[previous]"
+     
         />
+        <img
+        class="shadow-2xl main-image"
+        [src]="imageList[current]"
+
+      />
+        <img
+        class="shadow-xl secondary-image"
+        [src]="imageList[next]"
+      />
       </div>
       <ng-container *ngIf="!isScreenSizeLtMedium">
         <button (click)="navigateNext()" class="button-color" mat-mini-fab>
