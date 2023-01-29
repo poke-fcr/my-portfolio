@@ -8,6 +8,7 @@
   text-align: center;
   background-color: #FCE77D ;
   min-width: -webkit-fill-available;
+  overflow: hidden;
 
   .feature-display {
     display: flex;
@@ -24,15 +25,20 @@
     background-color: #F96167 ;
   }
 
+  .image-container{
+    height: 240px;
+    padding: 24px;
+  }
+
   .secondary-image{
     opacity: 0.3;
     margin: 0px 24px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
   }
 
   .main-image {
-    height: 240px;
-    width: 240px;
+    height: 180px;
+    width: 180px;
   }
 }

@@ -38,10 +38,11 @@ export class SkillsHomeComponent implements OnInit {
   }
 
   navigatePrevious() {
+    this.next = this.current;
     this.current > 0
       ? (this.current = this.current - 1)
       : (this.current = this.imageList.length - 1);
-    this.next = this.current - 1;
+    
     this.previous =
       this.current > 0 ? this.current - 1 : this.imageList.length - 1;
   }
