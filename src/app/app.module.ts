@@ -13,14 +13,16 @@ import {MatCardModule} from '@angular/material/card';
 import { SkillsHomeComponent } from './components/skills-home/skills-home.component'
 import { FooterComponent } from './components/footer/footer.component';
 import { FeaturedComponent } from './components/featured/featured.component';
-
+import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
+import {MatTooltipModule} from '@angular/material/tooltip'
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     SkillsHomeComponent,
     FooterComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    LearningJourneyComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { FeaturedComponent } from './components/featured/featured.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
