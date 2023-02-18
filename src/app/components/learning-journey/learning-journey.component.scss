@@ -1,6 +1,6 @@
-// #magazine {
-//   width: 701px;
-//   height: 501px;
+// #magazine, .text {
+//   width: 425px;
+//   height: 303px;
 // }
 #magazine .turn-page {
   background-color: #ccc;
@@ -8,11 +8,11 @@
 
 .cover {
   cursor: pointer;
-  background-color: #be6642;
+  background-color: #379683;
   border-radius: 0 24px 24px 0;
   .dark-cover {
     height: 100%;
-    background-color: #8d3a34 !important;
+    background-color: #05386b !important;
   }
   .heading {
     font-size: 42px;
@@ -38,7 +38,9 @@
   //   background-color: #af69ee;
   //   background-color: #c64b8c;
   // background-color: #80788d;
-  background-color: #949fb1;
+  background-color: #5cdb95;
+  // height: 90vh;
+  // min-height: 90vh;
 
   @media (min-width: 961px) {
     margin: 1em;

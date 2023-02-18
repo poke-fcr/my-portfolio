@@ -14,7 +14,8 @@ import { SkillsHomeComponent } from './components/skills-home/skills-home.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { FeaturedComponent } from './components/featured/featured.component';
 import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
-import {MatTooltipModule} from '@angular/material/tooltip'
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { AppHomeComponent } from './components/app-home/app-home.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import {MatTooltipModule} from '@angular/material/tooltip'
     SkillsHomeComponent,
     FooterComponent,
     FeaturedComponent,
-    LearningJourneyComponent
+    LearningJourneyComponent,
+    AppHomeComponent
   ],
   imports: [
     BrowserModule,

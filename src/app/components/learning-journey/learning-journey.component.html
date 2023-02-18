@@ -9,28 +9,109 @@
       </div>
     </div>
     <div class="text page-2">
-      <div class="flex flex-col p-12 h-full">
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
+      <div class="flex flex-col p-12 h-full justify-center text-center">
+        <span class="font-semibold mb-2"><i>Infosys</i></span>
+        <img class="shadow-xl" src="./../../../assets/notebook/infosys.png" />
+        <span class="font-bold mt-2">1 Nov 2020 - Ongoing.</span>
       </div>
-
     </div>
     <div class="text page-3">
-      <div class="flex flex-col p-12 h-full">
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
+      <div class="flex flex-col p-12 h-full justify-center">
+        <ng-container [ngTemplateOutlet]="infy"></ng-container>
       </div>
-
+    </div>
+    <div class="text page-2">
+      <div class="flex flex-col p-12 h-full justify-center text-center">
+        <span class="font-semibold mb-2"><i>My School</i></span>
+        <img class="shadow-xl" src="./../../../assets/notebook/school.jpg" />
+        <span class="font-bold mt-2"
+          >St. Joseph's Convent Sr. Sec School Sagar Madhya Pradesh.</span
+        >
+      </div>
+    </div>
+    <div class="text page-3">
+      <div class="flex flex-col p-12 h-full justify-center">
+        <div class="h-1/3">
+          <ng-container [ngTemplateOutlet]="hsc"></ng-container>
+        </div>
+        <div class="h-1/3">
+          <ng-container [ngTemplateOutlet]="ssc"></ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="text page-2">
+      <div class="flex flex-col p-12 h-full justify-center text-center">
+        <span class="font-semibold mb-2"><i>My School</i></span>
+        <img class="shadow-xl" src="./../../../assets/notebook/school.jpg" />
+        <span class="font-bold mt-2"
+          >St. Joseph's Convent Sr. Sec School Sagar Madhya Pradesh.</span
+        >
+      </div>
+    </div>
+    <div class="text page-3">
+      <div class="flex flex-col p-12 h-full justify-center">
+        <div class="h-1/3">
+          <ng-container [ngTemplateOutlet]="hsc"></ng-container>
+        </div>
+        <div class="h-1/3">
+          <ng-container [ngTemplateOutlet]="ssc"></ng-container>
+        </div>
+      </div>
     </div>
     <div class="text back">
-      <div class="flex flex-col p-12 h-full">
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
-        <div class="h-1/3 font-semibold">Hi there, Really great to share my learning journey with you. </div>
+      <div class="flex flex-col p-12 h-full justify-center">
+        <div class="font-semibold">
+          Hi there, Really great to share my learning journey with you.
+        </div>
       </div>
-
     </div>
   </div>
 </mat-card>
+
+<ng-template #hsc>
+  <div class="flex">
+    <div class="flex flex-col width-expand">
+      <Span class="font-semibold">HSC 2013-2014</Span>
+      <span>CBSE Board</span>
+      <span>All subjects</span>
+      <span>CGPA 8.0</span>
+    </div>
+    <!-- <div class="w-1/3">Image</div> -->
+  </div>
+</ng-template>
+
+<ng-template #ssc>
+  <div class="flex">
+    <div class="flex flex-col width-expand">
+      <Span class="font-semibold">SSC 2015-2016</Span>
+      <span>CBSE Board</span>
+      <span>Physics, Chemistry and Maths with Informatic practices.</span>
+      <span>Percentage: 82.2%</span>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #infy>
+  <div class="flex">
+    <div class="flex flex-col width-expand">
+      <Span class="font-semibold">Roles and responsibilities </Span>
+      <span>Senior System Engineer</span>
+      <span class="text-xs"
+        >I am working as a front-end developer. My day-to-day tasks include
+        obtaining requirements from client and manager. And then converting them
+        into responsive and logical modules using Angular framework. I have also
+        done development in hybrid mobile apps.</span
+      >
+      <Span class="font-semibold mt-2">Skills </Span>
+      <span class="text-xs"
+        >Angular, JavaScript, TypeScript, HTML, CSS, Git, Jira, Restful APIS,
+        Jenkins, Web accessibility, Angular material, Bootstrap</span
+      >
+      <Span class="font-semibold mt-2">Rewards and Recognitioins </Span>
+      <span class="text-xs"
+        >Certificate of Excellence for winning 'Leagure of Super Heroes - The
+        value creators'</span
+      >
+    </div>
+  </div>
+</ng-template>

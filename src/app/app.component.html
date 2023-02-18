@@ -1,6 +1,32 @@
+<p>
+  <mat-toolbar class="custom-toolbar shadow-xl">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <div>
+      <button
+        mat-stroked-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+      <mat-icon>timeline</mat-icon> Learning journey
+      </button>
 
-<app-landing></app-landing>
-<app-featured></app-featured>
-<app-skills-home></app-skills-home>
-<app-learning-journey></app-learning-journey>
-<app-footer></app-footer>
+      <button
+        mat-stroked-button
+        class="example-icon"
+        style="margin-left: 4px !important;"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon> Share
+      </button>
+    </div>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>
