@@ -22,21 +22,16 @@
     </div>
     <div class="text page-2">
       <div class="flex flex-col p-12 h-full justify-center text-center">
-        <span class="font-semibold mb-2"><i>My School</i></span>
-        <img class="shadow-xl" src="./../../../assets/notebook/school.jpg" />
+        <span class="font-semibold mb-2"><i>My College</i></span>
+        <img class="shadow-xl" src="./../../../assets/notebook/itm.jpg" />
         <span class="font-bold mt-2"
-          >St. Joseph's Convent Sr. Sec School Sagar Madhya Pradesh.</span
+          >Institute of Technology and Management Gwalior Madhya Pradesh.</span
         >
       </div>
     </div>
     <div class="text page-3">
       <div class="flex flex-col p-12 h-full justify-center">
-        <div class="h-1/3">
-          <ng-container [ngTemplateOutlet]="hsc"></ng-container>
-        </div>
-        <div class="h-1/3">
-          <ng-container [ngTemplateOutlet]="ssc"></ng-container>
-        </div>
+        <ng-container [ngTemplateOutlet]="itm"></ng-container>
       </div>
     </div>
     <div class="text page-2">
@@ -61,7 +56,7 @@
     <div class="text back">
       <div class="flex flex-col p-12 h-full justify-center">
         <div class="font-semibold">
-          Hi there, Really great to share my learning journey with you.
+          Hey there! Really great to share my learning journey with you.
         </div>
       </div>
     </div>
@@ -75,6 +70,27 @@
       <span>CBSE Board</span>
       <span>All subjects</span>
       <span>CGPA 8.0</span>
+    </div>
+    <!-- <div class="w-1/3">Image</div> -->
+  </div>
+</ng-template>
+
+<ng-template #itm>
+  <div class="flex">
+    <div class="flex flex-col width-expand">
+      <Span class="font-semibold">Bachelor of Engineering 2016-2020</Span>
+      <span>RGPV University</span>
+      <span>Computer science and engineering.</span>
+      <span>CGPA 8.3</span>
+
+      <Span class="font-semibold mt-2">Awards and Recognition</Span>
+      <ol>
+        <li>
+          Certificate of appreciation - Best project in academic session 2018-19
+        </li>
+        <li>Scored highest in college - 8th semester.</li>
+        <li>Class representative.</li>
+      </ol>
     </div>
     <!-- <div class="w-1/3">Image</div> -->
   </div>
