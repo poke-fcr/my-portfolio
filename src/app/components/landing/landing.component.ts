@@ -41,10 +41,7 @@ export class LandingComponent implements OnInit {
         translateZ: 0,
         easing: 'easeOutExpo',
         duration: 500,
-        delay: (el, i) => 50 * i,
+        delay: (el, i) => 35 * i,
       })
-  }
-
-  
-   
+  } 
 }

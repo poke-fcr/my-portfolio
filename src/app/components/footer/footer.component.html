@@ -1,9 +1,9 @@
 <div class="container">
-    <h1 class="heading">Hey, you still here. Lets connect.</h1>
-    <div class="contents" [ngClass]="{'flex-col': isScreenSizeLtMedium}">
+  <h1 class="heading">Hey, you still here. Lets connect.</h1>
+  <div class="contents" [ngClass]="{ 'flex-col': isScreenSizeLtMedium }">
     <div class="flex flex-col">
-        <button mat-flat-button class="button">Contact info</button>
-        <button mat-flat-button class="button">I have a query.</button>
+      <button mat-flat-button class="button">Contact info</button>
+      <button mat-flat-button class="button">I have a query.</button>
     </div>
     <div class="flex flex-col">
       <a class="links">About this exquisite website</a>
@@ -11,10 +11,32 @@
       <a class="links">Disclaimer and copyright statement</a>
     </div>
     <div class="flex justify-center">
-       <img class="image" src="./../../../assets/social/linkedin.png" height="32px" width="32px"/>
-       <img class="image" src="./../../../assets/social/twitter.png" height="32px" width="32px"/>
-       <img class="image" src="./../../../assets/social/instagram.png" height="32px" width="32px"/>
-      </div>
+      <a target="_blank" href="https://www.linkedin.com/in/jainvishal258/"
+        ><img
+          matTooltip="Vishal's LinkedIn"
+          title
+          class="image"
+          src="./../../../assets/social/linkedin.png"
+          height="32px"
+          width="32px"
+      /></a>
+      <!-- <img class="image" src="./../../../assets/social/twitter.png" height="32px" width="32px"/> -->
+      <a target="_blank" href="https://www.instagram.com/vishal.0103/"
+        ><img
+          matTooltip="Vishal's Instagram"
+          class="image"
+          src="./../../../assets/social/instagram.png"
+          height="32px"
+          width="32px"
+      /></a>
+      <a target="_blank" href="https://github.com/poke-fcr/"
+        ><img
+          matTooltip="Vishal's Github"
+          class="image"
+          src="./../../../assets/social/git-icon-2.png"
+          height="32px"
+          width="32px"
+      /></a>
     </div>
-
+  </div>
 </div>

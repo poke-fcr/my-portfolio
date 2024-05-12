@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { PageFlip, SizeType } from 'page-flip';
+import { ValueService } from 'src/app/service/value.service';
 
 @Component({
   selector: 'app-learning-journey',
@@ -7,14 +8,20 @@ import { PageFlip, SizeType } from 'page-flip';
   styleUrls: ['./learning-journey.component.scss']
 })
 export class LearningJourneyComponent implements OnInit, AfterViewInit {
-
-  constructor() { }
+  isScreenSizeLtMedium: boolean = false
+  constructor(private valueSvc: ValueService) { }
   ngAfterViewInit() {
-    let id = document.getElementById("magazine")
 
+    let id = document.getElementById("magazine")
+    let bookWidth = this.isScreenSizeLtMedium ? (this.getWidth() * 0.85) : (this.getWidth() /3.5)
+    let bookHeight = bookWidth * 1.4 
+    document.getElementById("magazine")?.setAttribute("style",`width:${bookWidth}px`);
+    document.getElementById("magazine")?.setAttribute("style",`height:${bookHeight}px`);
+
+    console.log(bookWidth)
     const pageFlip = new PageFlip(id!, {
-      width: this.getWidth() / 3.8, // required parameter - base page width
-      height: (this.getWidth() / 3.8) * 1.4, // required parameter - base page height
+      width: bookWidth, // required parameter - base page width
+      height: bookHeight, // required parameter - base page height
       showCover: true,
       maxShadowOpacity: 1,
       // mobileScrollSupport: false,
@@ -28,8 +35,12 @@ export class LearningJourneyComponent implements OnInit, AfterViewInit {
 
   
 
-  ngOnInit() {
-  }
+ngOnInit() {
+  this.valueSvc.screenSizeLtMedium.subscribe((value:boolean)=>{
+     this.isScreenSizeLtMedium = value
+     console.log(value)
+   })
+ }
 
   getWidth() {
     if (self.innerWidth) {

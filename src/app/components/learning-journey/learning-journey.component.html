@@ -4,7 +4,7 @@
       <div class="flex h-full items-center">
         <div class="w-2/12 dark-cover h-full"></div>
         <div class="w-10/12 flex flex-col justify-center">
-          <h1 class="heading">My Learning Journey</h1>
+          <h2 class="heading">My Learning Journey</h2>
         </div>
       </div>
     </div>
@@ -44,13 +44,9 @@
       </div>
     </div>
     <div class="text page-3">
-      <div class="flex flex-col p-12 h-full justify-center">
-        <div class="h-1/3">
-          <ng-container [ngTemplateOutlet]="hsc"></ng-container>
-        </div>
-        <div class="h-1/3">
+      <div class="flex flex-col p-12 h-full justify-around">
+          <ng-container [ngTemplateOutlet]="hsc"></ng-container>       
           <ng-container [ngTemplateOutlet]="ssc"></ng-container>
-        </div>
       </div>
     </div>
     <div class="text back">
@@ -61,10 +57,11 @@
       </div>
     </div>
   </div>
+ 
 </mat-card>
-
+<span *ngIf="isScreenSizeLtMedium">View in desktop browser for best view.</span>
 <ng-template #hsc>
-  <div class="flex">
+  <div class="flex mb-2">
     <div class="flex flex-col width-expand">
       <Span class="font-semibold">HSC 2013-2014</Span>
       <span>CBSE Board</span>

@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     console.log(window.innerWidth);
-    if (window.innerWidth < 920) {
+    if (window.innerWidth < 720) {
       this.valueSvc.screenSizeLtMedium.next(true);
     } else {
       this.valueSvc.screenSizeLtMedium.next(false);

@@ -7,7 +7,7 @@
   color: #feffff;
   text-align: center;
   background-color: #18bc9c;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,13 +27,16 @@
 .image-resize {
   width: 20%;
   @media (min-width: 360px) {
-    width: 45%;
+    width: 42%;
   }
-  @media (min-width: 961px) {
+  @media (min-width: 560px) {
     width: 25%;
   }
+  @media (min-width: 961px) {
+    width: 20%;
+  }
   @media (min-width: 1281px) {
-    width: 15%;
+    width: 13%;
   }
 
   border-radius: 9999px;
@@ -48,6 +51,9 @@
   padding: 12px;
   margin-left: 12px;
   color: #feffff;
+  font-style: italic;
+  font-family: ui-monospace;
+  font-weight: 600;
   // min-width:45%;
 }
 

@@ -10,7 +10,8 @@ export class FeaturedComponent implements OnInit {
     imageList = [
     './../../../assets/featured/Infosys Certified Angular Professional-1.jpg',
     './../../../assets/featured/certificate of excellence 2.jpg',
-    './../../../assets/featured/Best Project PBL.jpg',
+    './../../../assets/featured/newgen-rnr-1.jpg',
+    './../../../assets/featured/Best Project PBL.jpg'
   ];
   current = 0;
   isScreenSizeLtMedium: boolean = false
