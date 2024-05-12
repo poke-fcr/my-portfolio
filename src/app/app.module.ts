@@ -15,7 +15,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FeaturedComponent } from './components/featured/featured.component';
 import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import { AppHomeComponent } from './components/app-home/app-home.component'
+import { AppHomeComponent } from './components/app-home/app-home.component';
+import { LearningJourneyWrapComponent } from './components/learning-journey-wrap/learning-journey-wrap.component'
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { AppHomeComponent } from './components/app-home/app-home.component'
     FooterComponent,
     FeaturedComponent,
     LearningJourneyComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    LearningJourneyWrapComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { AppHomeComponent } from './components/app-home/app-home.component'
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

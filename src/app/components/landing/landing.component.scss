@@ -4,9 +4,11 @@
     margin: 1em;
   }
   margin-bottom: 1em;
-  color: #feffff;
+  color: #333333; /* Dark gray text */
   text-align: center;
-  background-color: #18bc9c;
+  // background-color: #18bc9c;
+  background-image: linear-gradient(to bottom right, #18bc9c, transparent),
+                          linear-gradient(to top left, #91fde8, transparent);
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@
   @media (min-width: 961px) {
     width: 20%;
   }
-  @media (min-width: 1281px) {
+  @media (min-width: 1200px) {
     width: 13%;
   }
 
@@ -49,8 +51,12 @@
 .my-description {
   display: inline-block;
   padding: 12px;
+  @media (max-width: 720px) {
+    padding: 12px 0 0 0;
+  }
+  
   margin-left: 12px;
-  color: #feffff;
+  // color: #feffff;
   font-style: italic;
   font-family: ui-monospace;
   font-weight: 600;

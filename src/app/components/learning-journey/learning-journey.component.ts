@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { PageFlip, SizeType } from 'page-flip';
+import { Orientation, PageFlip, SizeType } from 'page-flip';
 import { ValueService } from 'src/app/service/value.service';
 
 @Component({
@@ -24,9 +24,11 @@ export class LearningJourneyComponent implements OnInit, AfterViewInit {
       height: bookHeight, // required parameter - base page height
       showCover: true,
       maxShadowOpacity: 1,
+      
       // mobileScrollSupport: false,
       
-  });
+  })
+  // pageFlip.updateOrientation(Orientation.PORTRAIT)
   pageFlip.loadFromHTML(document.querySelectorAll('.text'));
   // pageFlip.on('flip', ()=>{
   //   document?.getElementById('magazine')?.scrollIntoView();
