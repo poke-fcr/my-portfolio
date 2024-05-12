@@ -17,5 +17,7 @@ export class FooterComponent implements OnInit {
       console.log(value)
     })
   }
+  
+ 
 
 }

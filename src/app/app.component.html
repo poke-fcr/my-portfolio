@@ -14,15 +14,15 @@
         mat-stroked-button
         class="example-icon favorite-icon"
         aria-label="Example icon-button with heart icon"
-        routerLink="/learning-journey"
+        (click)="openLearningJourney()"
       >
-      <mat-icon>timeline</mat-icon> Learning journey
+        <mat-icon>timeline</mat-icon> Learning Journey
       </button>
 
       <button
         mat-stroked-button
         class="example-icon"
-        style="margin-left: 4px !important;"
+        style="margin-left: 4px !important"
         aria-label="Example icon-button with share icon"
       >
         <mat-icon>share</mat-icon> Share

@@ -16,7 +16,6 @@ import { FeaturedComponent } from './components/featured/featured.component';
 import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppHomeComponent } from './components/app-home/app-home.component';
-import { LearningJourneyWrapComponent } from './components/learning-journey-wrap/learning-journey-wrap.component'
 import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     FooterComponent,
     FeaturedComponent,
     LearningJourneyComponent,
-    AppHomeComponent,
-    LearningJourneyWrapComponent
+    AppHomeComponent
   ],
   imports: [
     BrowserModule,
