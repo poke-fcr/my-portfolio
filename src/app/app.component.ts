@@ -50,4 +50,5 @@ export class AppComponent implements OnInit {
       alert('Sharing not supported in this browser.');
     }
   }
+
 }

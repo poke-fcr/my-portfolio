@@ -1,0 +1,29 @@
+.container {
+    // min-height: 100vh;
+    padding: 1em;
+    margin: 1rem;
+    // text-align: center;
+    justify-content: center;
+    min-width: -webkit-fill-available;
+    color: #17252A;
+
+    .contents {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .heading {
+        font-weight: 500;
+    }
+
+    mat-card {
+        background-image: linear-gradient(to bottom right, #18bc9c, transparent),
+            linear-gradient(to top left, #91fde8, transparent);
+    }
+
+    mat-icon {
+        height: 42px;
+        width: 42px;
+        font-size: 42px;
+    }
+}

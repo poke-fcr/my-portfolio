@@ -17,6 +17,7 @@ import { LearningJourneyComponent } from './components/learning-journey/learning
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppHomeComponent } from './components/app-home/app-home.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ContactDialogComponent } from './components/contact-dialog/contact-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FooterComponent,
     FeaturedComponent,
     LearningJourneyComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    ContactDialogComponent
   ],
   imports: [
     BrowserModule,
