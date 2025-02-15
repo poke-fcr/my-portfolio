@@ -28,16 +28,4 @@ export class FooterComponent implements OnInit {
     this.router.navigate(['contact'], {queryParams : {rel: 'query'}})
   }
 
-  openCredit() {
-    this.router.navigate(['contact'], {queryParams : {rel: 'credit'}})
-  }
-
-  openAbout() {
-    this.router.navigate(['contact'], {queryParams : {rel: 'about'}})
-  }
-
-  openDisclaimer() {
-    this.router.navigate(['contact'], {queryParams : {rel: 'disclaimer'}})
-  }
-
 }
