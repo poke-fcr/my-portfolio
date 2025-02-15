@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Orientation, PageFlip, SizeType } from 'page-flip';
+import { Subscription } from 'rxjs';
 import { ValueService } from 'src/app/service/value.service';
 
 @Component({
@@ -7,8 +8,9 @@ import { ValueService } from 'src/app/service/value.service';
   templateUrl: './learning-journey.component.html',
   styleUrls: ['./learning-journey.component.scss']
 })
-export class LearningJourneyComponent implements OnInit, AfterViewInit {
+export class LearningJourneyComponent implements OnInit, AfterViewInit, OnDestroy {
   isScreenSizeLtMedium: boolean = false
+  screenSizeLtMedium$!: Subscription
   constructor(private valueSvc: ValueService) { }
   ngAfterViewInit() {
 
@@ -38,7 +40,7 @@ export class LearningJourneyComponent implements OnInit, AfterViewInit {
   
 
 ngOnInit() {
-  this.valueSvc.screenSizeLtMedium.subscribe((value:boolean)=>{
+  this.screenSizeLtMedium$ = this.valueSvc.screenSizeLtMedium.subscribe((value:boolean)=>{
      this.isScreenSizeLtMedium = value
      console.log(value)
    })
@@ -72,6 +74,12 @@ ngOnInit() {
       return document.body.clientHeight;
     }
     return 0
+  }
+
+  ngOnDestroy(): void {
+    if(this.screenSizeLtMedium$) {
+      this.screenSizeLtMedium$.unsubscribe()
+    }
   }
 
 }

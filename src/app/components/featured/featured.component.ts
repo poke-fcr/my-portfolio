@@ -8,6 +8,7 @@ import { ValueService } from 'src/app/service/value.service';
 })
 export class FeaturedComponent implements OnInit {
     imageList = [
+      './../../../assets/featured/rising star award.jpg',
     './../../../assets/featured/Infosys Certified Angular Professional-1.jpg',
     './../../../assets/featured/certificate of excellence 2.jpg',
     './../../../assets/featured/newgen-rnr-1.jpg',

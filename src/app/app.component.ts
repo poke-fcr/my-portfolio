@@ -36,4 +36,18 @@ export class AppComponent implements OnInit {
     };
   this.dialog.open(LearningJourneyComponent, config);
   }
+
+  shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Hey checkout this app!',
+        text: 'I found something interesting. Take a look!',
+        url: window.location.href,
+      })
+      .then(() => console.log('Content shared successfully'))
+      .catch((error) => console.error('Error sharing content:', error));
+    } else {
+      alert('Sharing not supported in this browser.');
+    }
+  }
 }

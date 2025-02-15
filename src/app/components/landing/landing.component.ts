@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
 
 @Component({
@@ -6,11 +6,12 @@ import anime from 'animejs/lib/anime.es.js';
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent implements AfterViewInit {
   timeInterval = 1500;
+  newgenExpYears = ((new Date().getTime() - new Date("22 March 2023").getTime()) / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1)
   constructor() {}
 
-  ngOnInit() {
+  ngAfterViewInit() {
   //  this.initiateDOM()
   this.startAnimation()
   }
