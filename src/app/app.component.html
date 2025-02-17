@@ -5,12 +5,12 @@
     aria-label="Example icon-button with menu icon" (click)="sideMenuToggle = true">
     <mat-icon>menu</mat-icon>
   </button>
-  <button mat-stroked-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="">
+  <button *ngIf="!screenSizeLtMedium" mat-stroked-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="">
     <mat-icon>home</mat-icon>
   </button>
   <span class="example-spacer"></span>
   <div>
-    <button mat-stroked-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+    <button *ngIf="!screenSizeLtMedium" mat-stroked-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
       routerLink="projects">
       <mat-icon>folder_open</mat-icon> Explore Projects
     </button>
