@@ -18,6 +18,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppHomeComponent } from './components/app-home/app-home.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactDialogComponent } from './components/contact-dialog/contact-dialog.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { ContactDialogComponent } from './components/contact-dialog/contact-dial
     FeaturedComponent,
     LearningJourneyComponent,
     AppHomeComponent,
-    ContactDialogComponent
+    ContactDialogComponent,
+    ProjectsComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,

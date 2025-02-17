@@ -1,0 +1,23 @@
+<div class="container-sidemenu">
+    <div class="heading mb-3">
+        <div>
+            <h2 class="menu">Menu</h2>
+        </div>
+        <div>
+            <button (click)="close()" mat-icon-button class="example-icon"
+                aria-label="Example icon-button with menu icon" routerLink="">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <a class="example-icon favorite-icon flex items-center mb-2" aria-label="Example icon-button with heart icon"
+            routerLink="" (click)="close()">
+            <mat-icon>home</mat-icon>&nbsp;Home
+        </a>
+        <a class="example-icon favorite-icon flex items-center" aria-label="Example icon-button with heart icon"
+            routerLink="projects" (click)="close()">
+            <mat-icon>folder_open</mat-icon>&nbsp;Explore Projects
+        </a>
+    </div>
+</div>

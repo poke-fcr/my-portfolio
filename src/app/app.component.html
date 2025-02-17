@@ -1,23 +1,29 @@
-<p>
-  <mat-toolbar class="custom-toolbar shadow-xl">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
-    routerLink=""
-    >
-      <mat-icon>home</mat-icon>
+<app-sidemenu *ngIf="sideMenuToggle" class="shadow-2xl"></app-sidemenu>
+<mat-toolbar class="custom-toolbar shadow-xl">
+  <button mat-stroked-button class="example-icon" style="margin-right: 4px !important"
+    *ngIf="screenSizeLtMedium"
+    aria-label="Example icon-button with menu icon" (click)="sideMenuToggle = true">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-stroked-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span class="example-spacer"></span>
+  <div>
+    <button mat-stroked-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+      routerLink="projects">
+      <mat-icon>folder_open</mat-icon> Explore Projects
     </button>
-    <span class="example-spacer"></span>
-    <div>
-      <button mat-stroked-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
-        (click)="openLearningJourney()">
-        <mat-icon>timeline</mat-icon> Learning Journey
-      </button>
+    <button mat-stroked-button class="example-icon favorite-icon" style="margin-left: 4px !important"
+      aria-label="Example icon-button with heart icon" (click)="openLearningJourney()">
+      <mat-icon>timeline</mat-icon> Learning Journey
+    </button>
 
-      <button mat-stroked-button class="example-icon" style="margin-left: 4px !important" (click)="shareContent()"
-        aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon> Share
-      </button>
-    </div>
-  </mat-toolbar>
-</p>
+    <button mat-stroked-button class="example-icon" style="margin-left: 4px !important" (click)="shareContent()"
+      aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon> Share
+    </button>
+  </div>
+</mat-toolbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

@@ -16,3 +16,11 @@
 //   display: flex !important;
   align-content: center !important;
 }
+
+app-sidemenu {
+  height: 100vh;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  background-color: #f5f5f5;
+}
