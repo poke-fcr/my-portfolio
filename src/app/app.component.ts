@@ -3,7 +3,8 @@ import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
 import { ValueService } from './service/value.service';
-import { Subscription } from 'rxjs';
+import { delay, Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +15,18 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'my-portfolio';
   sideMenuToggle = false
   sideMenuToggleSubscription!: Subscription
+  learningJourneySubscription!: Subscription
   screenSizeLtMedium = false
 
-  constructor(private http: HttpClient, private valueSvc: ValueService, private dialog: MatDialog) { }
+  constructor(private valueSvc: ValueService, private dialog: MatDialog, private activatedRoutes: ActivatedRoute) { }
   ngOnInit() {
     this.onResize();
     this.sideMenuToggleSubscription = this.valueSvc.sideBarMenuToggle$.subscribe((v: boolean) => this.sideMenuToggle = v)
+    this.learningJourneySubscription = this.activatedRoutes.queryParams.pipe(delay(1000)).subscribe(d => {
+      if(d && d['init'] && d['init']=='lj') {
+        this.openLearningJourney()
+      }
+    })
   }
 
   @HostListener('window:resize', ['$event'])
@@ -65,6 +72,9 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.sideMenuToggleSubscription) {
       this.sideMenuToggleSubscription.unsubscribe()
+    }
+    if(this.learningJourneySubscription) {
+      this.learningJourneySubscription.unsubscribe()
     }
   }
 
