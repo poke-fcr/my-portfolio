@@ -8,7 +8,7 @@ import anime from 'animejs/lib/anime.es.js';
 })
 export class LandingComponent implements AfterViewInit {
   timeInterval = 1500;
-  newgenExpYears = ((new Date().getTime() - new Date("22 March 2023").getTime()) / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1)
+  totalYearsOfExp = ((new Date().getTime() - new Date("2 Nov 2020").getTime()) / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1)
   constructor() {}
 
   ngAfterViewInit() {

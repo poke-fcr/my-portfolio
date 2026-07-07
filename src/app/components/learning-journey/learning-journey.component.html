@@ -13,9 +13,21 @@
     </div>
     <div class="text page-2">
       <div class="flex flex-col p-12 h-full justify-center text-center">
+        <span class="page-heading">CitiCorp Service Pvt Ltd (Citi Bank)</span>
+        <img class="shadow-xl mb-2" src="./../../../assets/notebook/citi image.JPG" />
+        <span class="page-text">5 Jan 2026 - till date</span>
+      </div>
+    </div>
+    <div class="text page-3">
+      <div class="flex flex-col p-12 h-full justify-center" style="overflow: auto">
+        <ng-container [ngTemplateOutlet]="citi"></ng-container>
+      </div>
+    </div>
+    <div class="text page-2">
+      <div class="flex flex-col p-12 h-full justify-center text-center">
         <span class="page-heading">Newgen Softwares</span>
         <img class="shadow-xl mb-2" src="./../../../assets/notebook/newgen.png" />
-        <span class="page-text">22 March 2023 - till date</span>
+        <span class="page-text">22 March 2023 - 2 Jan 2026</span>
       </div>
     </div>
     <div class="text page-3">
@@ -152,6 +164,22 @@
       <Span class="page-heading">Rewards and Recognitioins </Span>
       <span class="page-text">Rising Star Award 2023-24</span>
       <span class="page-text">High Five Award</span>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #citi>
+  <div class="flex">
+    <div class="flex flex-col width-expand">
+      <!-- <Span class="page-heading">Roles and responsibilities </Span> -->
+      <span class="page-heading">Officer - Applications Development Intermediate Programmer Analyst</span>
+      <span class="page-text">Making use of my tech skill to enhance and contribute in banking applications globally.</span>
+      <!-- <Span class="page-heading">Skills </Span>
+      <span class="page-text"
+        >Angular, JavaScript, TypeScript, HTML, CSS, Git, Jira, Restful APIS,
+        Jenkins, Web accessibility, Angular material, Bootstrap</span
+      > -->
+     
     </div>
   </div>
 </ng-template>
