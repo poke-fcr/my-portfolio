@@ -6,20 +6,21 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './components/landing/landing.component'
-import { MatToolbarModule} from '@angular/material/toolbar'
-import {MatIconModule} from '@angular/material/icon'
-import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button'
-import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
-import { SkillsHomeComponent } from './components/skills-home/skills-home.component'
-import { FooterComponent } from './components/footer/footer.component';
-import { FeaturedComponent } from './components/featured/featured.component';
-import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
-import {MatLegacyTooltipModule as MatTooltipModule} from '@angular/material/legacy-tooltip';
-import { AppHomeComponent } from './components/app-home/app-home.component';
-import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/legacy-dialog';
-import { ContactDialogComponent } from './components/contact-dialog/contact-dialog.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {SkillsHomeComponent} from "./components/skills-home/skills-home.component";
+import {FooterComponent} from "./components/footer/footer.component";
+import {FeaturedComponent} from "./components/featured/featured.component";
+import {LearningJourneyComponent} from "./components/learning-journey/learning-journey.component";
+import {AppHomeComponent} from "./components/app-home/app-home.component";
+import {ContactDialogComponent} from "./components/contact-dialog/contact-dialog.component";
+import {ProjectsComponent} from "./components/projects/projects.component";
+import {SidemenuComponent} from "./components/sidemenu/sidemenu.component";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
+import {MatCardModule} from "@angular/material/card";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatDialogModule} from "@angular/material/dialog";
+
 @NgModule({
   declarations: [
     AppComponent,
