@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ValueService } from 'src/app/service/value.service';
+import { ValueService } from '../../service/value.service';
 
 @Component({
   selector: 'app-sidemenu',

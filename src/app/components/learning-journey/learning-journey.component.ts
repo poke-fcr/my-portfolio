@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Orientation, PageFlip, SizeType } from 'page-flip';
 import { Subscription } from 'rxjs';
-import { ValueService } from 'src/app/service/value.service';
+import { ValueService } from '../../service/value.service';
 
 @Component({
   selector: 'app-learning-journey',

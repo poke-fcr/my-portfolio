@@ -12,6 +12,7 @@
                           linear-gradient(to top left, #91fde8, transparent);
   min-height: 80vh;
   display: flex;
+  flex-direction: row;
   @media (max-width: 720px) {
     flex-direction: column;
 
