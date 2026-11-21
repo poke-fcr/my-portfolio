@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { LearningJourneyComponent } from './components/learning-journey/learning-journey.component';
 import { ValueService } from './service/value.service';
@@ -29,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
     })
   }
 
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize')
   onResize() {
     console.log(window.innerWidth);
     if (window.innerWidth < 720) {

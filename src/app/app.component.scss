@@ -17,6 +17,24 @@
   align-content: center !important;
 }
 
+::ng-deep .mat-mdc-dialog-surface .mdc-dialog__surface {
+   background: transparent !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+  box-shadow: none !important;
+//   display: flex !important;
+  align-content: center !important;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+     background: transparent !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+  box-shadow: none !important;
+//   display: flex !important;
+  align-content: center !important;
+}
+
 app-sidemenu {
   height: 100vh;
   display: block;
