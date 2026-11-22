@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './components/landing/landing.component'
 import {MatToolbarModule} from "@angular/material/toolbar";
@@ -21,32 +21,25 @@ import {MatCardModule} from "@angular/material/card";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatDialogModule} from "@angular/material/dialog";
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    LandingComponent,
-    SkillsHomeComponent,
-    FooterComponent,
-    FeaturedComponent,
-    LearningJourneyComponent,
-    AppHomeComponent,
-    ContactDialogComponent,
-    ProjectsComponent,
-    SidemenuComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule,
-    MatTooltipModule,
-    MatDialogModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        LandingComponent,
+        SkillsHomeComponent,
+        FooterComponent,
+        FeaturedComponent,
+        LearningJourneyComponent,
+        AppHomeComponent,
+        ContactDialogComponent,
+        ProjectsComponent,
+        SidemenuComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatCardModule,
+        MatTooltipModule,
+        MatDialogModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
