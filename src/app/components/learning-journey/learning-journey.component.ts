@@ -5,9 +5,10 @@ import { Subscription } from 'rxjs';
 import { ValueService } from '../../service/value.service';
 
 @Component({
-  selector: 'app-learning-journey',
-  templateUrl: './learning-journey.component.html',
-  styleUrls: ['./learning-journey.component.scss']
+    selector: 'app-learning-journey',
+    templateUrl: './learning-journey.component.html',
+    styleUrls: ['./learning-journey.component.scss'],
+    standalone: false
 })
 export class LearningJourneyComponent implements OnInit, AfterViewInit, OnDestroy {
   isScreenSizeLtMedium: boolean = false

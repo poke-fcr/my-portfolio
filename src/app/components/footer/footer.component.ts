@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { ValueService } from '../../service/value.service';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss'],
+    standalone: false
 })
 export class FooterComponent implements OnInit {
   isScreenSizeLtMedium: boolean = false

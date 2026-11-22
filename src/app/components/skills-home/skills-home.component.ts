@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ValueService } from '../../service/value.service';
 
 @Component({
-  selector: 'app-skills-home',
-  templateUrl: './skills-home.component.html',
-  styleUrls: ['./skills-home.component.scss'],
+    selector: 'app-skills-home',
+    templateUrl: './skills-home.component.html',
+    styleUrls: ['./skills-home.component.scss'],
+    standalone: false
 })
 export class SkillsHomeComponent implements OnInit {
   imageList = [

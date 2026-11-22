@@ -2,9 +2,10 @@ import { AfterContentInit, AfterViewInit, Component } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss'],
+    selector: 'app-landing',
+    templateUrl: './landing.component.html',
+    styleUrls: ['./landing.component.scss'],
+    standalone: false
 })
 export class LandingComponent implements AfterViewInit {
   timeInterval = 1500;

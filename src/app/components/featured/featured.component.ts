@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ValueService } from '../../service/value.service';
 
 @Component({
-  selector: 'app-featured',
-  templateUrl: './featured.component.html',
-  styleUrls: ['./featured.component.scss']
+    selector: 'app-featured',
+    templateUrl: './featured.component.html',
+    styleUrls: ['./featured.component.scss'],
+    standalone: false
 })
 export class FeaturedComponent implements OnInit {
     imageList = [

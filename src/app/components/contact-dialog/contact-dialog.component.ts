@@ -3,9 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { ValueService } from '../../service/value.service';
 
 @Component({
-  selector: 'app-contact-dialog',
-  templateUrl: './contact-dialog.component.html',
-  styleUrls: ['./contact-dialog.component.scss']
+    selector: 'app-contact-dialog',
+    templateUrl: './contact-dialog.component.html',
+    styleUrls: ['./contact-dialog.component.scss'],
+    standalone: false
 })
 export class ContactDialogComponent implements OnInit {
   isScreenSizeLtMedium: boolean = false
